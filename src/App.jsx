@@ -1,5 +1,5 @@
 import Box from '@mui/system/Box';
-import Search from './pages/search/Search';
+import Register from './pages/register/Register';
 
 
 
@@ -16,7 +16,7 @@ function App() {
         bgcolor: 'rgba(22, 10, 53, 1)', 
       }}
     >
-      <Search />
+      <Register/>
     </Box>
   )
 }
