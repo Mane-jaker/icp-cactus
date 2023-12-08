@@ -29,7 +29,7 @@ export default function CarouselRatio() {
     const matches = useMediaQuery(theme.breakpoints.up('sm'));
 
     return (
-        <Box sx={{ px: 2 }}>
+        <Box sx={{ px: 2, width:'100%' }}>
             <TypographyM variant={matches ? 'h3' : 'h5'} style={{ color: '#FFFFFF' }}>
                 Negocios
             </TypographyM>

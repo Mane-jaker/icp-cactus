@@ -4,8 +4,6 @@ import Button from './Button';
 import Card from './Card'
 import Balance from './Balance';
 import Profile from "./Profile"
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
 
 function Wallet() {
     return (
@@ -16,7 +14,7 @@ function Wallet() {
                 alignItems: 'center',
                 justifyContent: 'flex-start', // Centra el contenido verticalmente
                 minHeight: '100vh', // Asegura que el contenedor ocupe toda la altura de la vista
-                width: '100%', // Asegura que el contenedor ocupe todo el ancho de la vista
+                width: '108%', // Asegura que el contenedor ocupe todo el ancho de la vista
                 backgroundColor: '#221741', // Puedes cambiar el color de fondo
                 color:'white',
                 overflow: 'hidden', 

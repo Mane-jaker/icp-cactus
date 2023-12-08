@@ -20,7 +20,7 @@ function Profile() {
                 color: 'white', // Puedes cambiar el color del texto
             }}
         >
-            <HeaderProfile/>
+            <HeaderProfile title='Profile'/>
             <Box sx={{ marginBottom: '20px', marginTop: '120px'}}/>
             <ButtonNavigator IconComponent={AccountCircleIcon} text="Account" />
             <Box sx={{ marginBottom: '20px'}}/>
