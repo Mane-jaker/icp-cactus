@@ -1,0 +1,23 @@
+type userRole = 
+ variant {
+   Seller;
+   User;
+ };
+type user = 
+ record {
+   bisnessDescription: opt text;
+   identifier: Identifier;
+   name: text;
+   userType: userRole;
+ };
+type Identifier = 
+ record {
+   account_id: text;
+   "principal": principal;
+ };
+service : {
+  createUser: (text, userRole, text) -> (text);
+  listUsers: () -> (vec user) query;
+  updateUser: (text, text, userRole, text) -> (text);
+  whaomi: () -> (text);
+}
