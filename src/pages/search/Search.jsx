@@ -6,6 +6,7 @@ function Search() {
         <>
             <BoxSearch />
             <Carousel/>   
+            <Carousel />
         </>
     )
 }

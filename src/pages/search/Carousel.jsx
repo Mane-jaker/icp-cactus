@@ -29,8 +29,8 @@ export default function CarouselRatio() {
     const matches = useMediaQuery(theme.breakpoints.up('sm'));
 
     return (
-        <>
-            <TypographyM variant={matches ? 'h1' : 'h4'}>
+        <Box sx={{ px: 2 }}>
+            <TypographyM variant={matches ? 'h3' : 'h5'} style={{ color: '#FFFFFF' }}>
                 Negocios
             </TypographyM>
             <Box
@@ -39,7 +39,7 @@ export default function CarouselRatio() {
                     gap: 1,
                     py: 1,
                     overflow: 'auto',
-                    width: 343,
+                    width: '100%',
                     scrollSnapType: 'x mandatory',
                     '& > *': {
                         scrollSnapAlign: 'center',
@@ -48,11 +48,11 @@ export default function CarouselRatio() {
                 }}
             >
                 {data.map((item) => (
-                    <Card orientation="horizontal" size="sm" key={item.title} variant="outlined">
-                        <AspectRatio ratio="1" sx={{ minWidth: 60 }}>
+                    <Card orientation="horizontal" size="lg" key={item.title} variant="outlined">
+                        <AspectRatio ratio="1" sx={{ minWidth: 80 }}>
                             <img
-                                srcSet={`${item.src}?h=120&fit=crop&auto=format&dpr=2 2x`}
-                                src={`${item.src}?h=120&fit=crop&auto=format`}
+                                srcSet={`${item.src}?h=180&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${item.src}?h=180&fit=crop&auto=format`}
                                 alt={item.title}
                             />
                         </AspectRatio>
@@ -63,6 +63,6 @@ export default function CarouselRatio() {
                     </Card>
                 ))}
             </Box>
-        </>
+        </Box>
     );
 }
