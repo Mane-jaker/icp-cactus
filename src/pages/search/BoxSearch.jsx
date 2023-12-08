@@ -48,42 +48,45 @@ function BoxSearch() {
                     height: '10vh',
                     background: '#221741',
                     borderBottomLeftRadius: '35px', // Redondea el borde inferior izquierdo
-                    borderBottomRightRadius: '35px', // Redondea el borde inferior derecho
+                    borderBottomRightRadius: '35px',
+                    display: 'flex', // Habilita Flexbox
+                    justifyContent: 'space-around', // Alinea los elementos con un espacio alrededor
+                    alignItems: 'center', // Centra los elementos verticalmente
                 }}
             >
                 <Button
-                variant="contained"
-                size="medium"
-                sx={{
-                  borderRadius: '20px',
-                  background: '#3E2B7B'
-                }}
+                    variant="contained"
+                    size="medium"
+                    sx={{
+                        borderRadius: '20px',
+                        background: '#3E2B7B'
+                    }}
                 >
                     All
                 </Button>
 
                 <Button
-                variant="contained"
-                size="medium"
-                sx={{
-                  borderRadius: '20px',
-                  background: '#3E2B7B',
-                }}
+                    variant="contained"
+                    size="medium"
+                    sx={{
+                        borderRadius: '20px',
+                        background: '#3E2B7B',
+                    }}
                 >
                     Persons
-                
+
                 </Button>
 
                 <Button
-                variant="contained"
-                size="medium"
-                sx={{
-                  borderRadius: '20px',
-                  background: '#3E2B7B',
-                }}
+                    variant="contained"
+                    size="medium"
+                    sx={{
+                        borderRadius: '20px',
+                        background: '#3E2B7B',
+                    }}
                 >
                     Business
-                
+
                 </Button>
 
             </Box>

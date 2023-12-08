@@ -1,8 +1,9 @@
 import Box from '@mui/system/Box';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-function Balance() {
+
+function Profile() {
     return (
-        <>        <Box
+        <Box
             sx={{
                 display:"flex",
                 color:"white",
@@ -13,6 +14,8 @@ function Balance() {
                     paddingLeft:"50px",
                     borderRadius: "15px",
                     background: "#160A35",
+                    color: "#ABE76F",
+                    fontSize:"13px",
                     paddingRight:"10px",
                     alignItems:"center",
                     justifyContent:"center"
@@ -24,9 +27,7 @@ function Balance() {
 <Box sx={{ marginRight:"50px",}}><h1>ManeBau</h1></Box>
 
         </Box>
-        </>
-
     );
 }
 
-export default Balance;
+export default Profile;
