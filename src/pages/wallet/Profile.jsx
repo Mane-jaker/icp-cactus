@@ -13,8 +13,6 @@ function Balance() {
                     paddingLeft:"50px",
                     borderRadius: "15px",
                     background: "#160A35",
-                    color: "#ABE76F",
-                    fontSize:"13px",
                     paddingRight:"10px",
                     alignItems:"center",
                     justifyContent:"center"

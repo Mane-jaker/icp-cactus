@@ -21,8 +21,7 @@ function Profile() {
             }}
         >
             <HeaderProfile/>
-
-            <Box sx={{ marginBottom: '20px', marginTop: '40px'}}/>
+            <Box sx={{ marginBottom: '20px', marginTop: '120px'}}/>
             <ButtonNavigator IconComponent={AccountCircleIcon} text="Account" />
             <Box sx={{ marginBottom: '20px'}}/>
             <ButtonNavigator IconComponent={NotificationsIcon} text="Notifications" />

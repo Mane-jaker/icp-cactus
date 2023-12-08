@@ -5,10 +5,11 @@ function HeaderProfile() {
     return (  
         <>
             <Box sx={{
+                position: 'absolute', top: 1,
                 display: 'flex',
                 backgroundColor: '#221741',
                 borderRadius: '10px',
-                width: '107.8%',
+                width: '108%',
                 height: '120px',
                 justifyContent: 'center',
                 alignItems: 'center',
