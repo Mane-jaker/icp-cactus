@@ -1,14 +1,16 @@
 import Box from '@mui/system/Box';
 import Typography from '@mui/material/Typography';
+import PropTypes from 'prop-types';
 
-function HeaderProfile() {
+function HeaderProfile({title}) {
     return (  
         <>
             <Box sx={{
+                position: 'absolute', top: 1,
                 display: 'flex',
                 backgroundColor: '#221741',
                 borderRadius: '10px',
-                width: '107.8%',
+                width: '108%',
                 height: '120px',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -18,11 +20,15 @@ function HeaderProfile() {
                 borderTopRightRadius: '0px',
             }}>
                 <Typography variant="h5" sx={{color: '#E6E0E9', fontWeight: 'bold'}}>
-                    Profile
+                    {title}
                 </Typography>
             </Box>
         </>
     );
 }
+
+HeaderProfile.propTypes = {
+    title: PropTypes.string.isRequired,
+  };
 
 export default HeaderProfile;

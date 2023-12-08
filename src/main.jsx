@@ -39,5 +39,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Connect2ICProvider client={client}>
      <App />
     </Connect2ICProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
