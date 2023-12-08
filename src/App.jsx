@@ -1,5 +1,5 @@
 import Box from '@mui/system/Box';
-import Search from './pages/wallet/wallet';
+import Search from './pages/wallet/Wallet';
 
 
 
@@ -16,7 +16,7 @@ function App() {
         bgcolor: 'rgba(22, 10, 53, 1)', 
       }}
     >
-      <Register/>
+      <Search/>
     </Box>
   )
 }
