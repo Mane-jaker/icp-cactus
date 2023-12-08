@@ -1,5 +1,5 @@
 import Box from '@mui/system/Box';
-import Search from './pages/search/Search';
+import Search from './pages/Search/Search';
 
 
 
